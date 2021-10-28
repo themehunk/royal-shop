@@ -4,9 +4,9 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.0.5
+Version: 1.0.6
 Requires at least: 5.3
-Tested up to: 5.7.1
+Tested up to: 5.8.1
 Requires PHP: 5.3
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -4557,7 +4557,7 @@ section.upsells.products h2,.woocommerce #reviews #comments h2{
 }
 .single-product.woocommerce div.product form.cart{
   float: initial;
-  display: flex;
+  display: inline-block;
 }
 .single-product.woocommerce div.product form.cart .single_add_to_cart_button{
   flex-grow: 2;
