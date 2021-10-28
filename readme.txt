@@ -3,7 +3,7 @@ Contributors: ThemeHunk
 Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least:5.3
 Requires PHP: 5.3
-Tested up to: 5.7.1
+Tested up to: 5.8.1
 Stable tag: 1.0.6
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
