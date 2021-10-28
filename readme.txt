@@ -4,7 +4,7 @@ Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, fou
 Requires at least:5.3
 Requires PHP: 5.3
 Tested up to: 5.7.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,6 +23,9 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+= 1.0.6 =
+* Single page add to cart style issue fixed.
+
 = 1.0.5 =
 * Sidebar issue resolved.
 * Below footer issue resolved.
@@ -53,11 +56,8 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.0.5 =
-* Sidebar issue resolved.
-* Below footer issue resolved.
-* Wpc wishlist icon issue resolved.
-* Style issue resolved.
+= 1.0.6 =
+* Single page add to cart style issue fixed.
 
 
 == Resources ==
