@@ -468,6 +468,9 @@ if ( ! class_exists( 'Royal_Shop_Admin_Settings' ) ){
             elseif($plugin_slug=='woo-smart-compare'){
                 $active_file_name = $plugin_slug . '/wpc-smart-compare.php';
                 }
+            elseif($plugin_slug=='th-advance-product-search'){
+                $active_file_name = $plugin_slug . '/th-advance-product-search.php';
+                }
             else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
@@ -531,6 +534,11 @@ if ( ! class_exists( 'Royal_Shop_Admin_Settings' ) ){
 		        $detail='';
                 }elseif($plugin_slug=='wp-popup-builder'){
 				echo'<img src="'.esc_url( ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/wp-popup-builder.png' ).'" />'; 
+				$detail='';
+                }elseif($plugin_slug=='th-advance-product-search'){
+				echo'<img src="'.esc_url( ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-advance-product-search.gif' ).'" />';
+
+	
 		        $detail='';
                 }elseif($plugin_slug=='z-companion'){
                 	echo'<img src="'.esc_url(ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/z-companion.png' ).'" />'; 

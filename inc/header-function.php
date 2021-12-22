@@ -475,7 +475,7 @@ else{
         <div class="wzta-search-inner">
           <div class="container">
               <?php if ( class_exists( 'WooCommerce' ) ){
-              royal_shop_product_search_box();
+                echo royal_shop_th_advance_product_search();
               } ?>
               <button class="wzta-search-close">&#10005;</button>
           </div>
@@ -1150,7 +1150,7 @@ add_action('royal_shop_site_preloader','royal_shop_preloader');
                      <div class="container">
                       <div class="search-close"><a class="search-close-btn"></a></div>
                      <?php  if ( class_exists( 'WooCommerce' ) ){
-                              royal_shop_product_search_box();
+                              echo royal_shop_th_advance_product_search();
                           } ?>
                        </div>
        </div> 
@@ -1239,3 +1239,20 @@ $royal_shop_mobile_menu_open = get_theme_mod('royal_shop_mobile_menu_open','left
 <?php 
 }
 add_action( 'royal_shop_main_header', 'royal_shop_open_cart_mobile_panel' );
+
+
+//********************************
+//th advance product search 
+//*******************************
+
+function royal_shop_th_advance_product_search(){
+  if ( shortcode_exists('th-aps') ){
+                echo do_shortcode('[th-aps]');
+              } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
+                $url = admin_url('themes.php?page=royal-shop&searchp');
+                $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
+                $url = (function_exists("royal_shop_pro_load_plugin"))?$pro_url:$url;
+
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','m-shop').'</a>';
+                    }
+}
