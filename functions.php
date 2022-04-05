@@ -111,6 +111,11 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                  'active_filename' => 'woo-smart-compare/wpc-smart-compare.php',
                  'slug'			=>	'woo-smart-compare',
              ),
+            'th-advance-product-search' => array(
+            'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
+            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
+            'slug'			=>	'th-advance-product-search',
+            ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'royal-shop' ),
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
