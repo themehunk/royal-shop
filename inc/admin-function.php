@@ -888,10 +888,6 @@ function royal_shop_stick_sidebar($class){
 }
 add_filter( 'royal_shop_stick_sidebar_class','royal_shop_stick_sidebar', 999 );
 
-//custom function conditional check for blog page
-function is_blog (){
-    return ( is_archive() || is_author() || is_category() || is_home() || is_tag()) && 'post' == get_post_type();
-}
 ///////////////////////
 //service content output function
 ///////////////////////

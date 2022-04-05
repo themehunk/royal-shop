@@ -23,8 +23,10 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
 = 1.0.7 =
 * Th advance product search plugin added.
+* Is_blog function removed.
 
 = 1.0.6 =
 * Single page add to cart style issue fixed.
