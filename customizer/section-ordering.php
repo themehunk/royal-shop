@@ -114,15 +114,15 @@ $wp_customize->add_setting('royal_shop_sidebar_shp_pge_option', array(
     ));
 $wp_customize->add_control( 'royal_shop_sidebar_shp_pge_option', array(
         'settings' => 'royal_shop_sidebar_shp_pge_option',
-        'label'    => __('Shop Page & Product Category Page','royal-shop-pro'),
+        'label'    => __('Shop Page & Product Category Page','royal-shop'),
         'section'  => 'royal-shop-section-sidebar-group',
         'type'     => 'select',
         'choices'    => array(
-        'internal-sidebar' => __('Same as Internal Pages','royal-shop-pro'),
-        'active-sidebar' => __('Active Both Sidebar','royal-shop-pro'),
-        'no-sidebar' => __('No Sidebar','royal-shop-pro'),
-        'disable-left-sidebar'  => __('Disable Left Sidebar','royal-shop-pro'),
-        'disable-right-sidebar' => __('Disable Right Sidebar','royal-shop-pro'),
+        'internal-sidebar' => __('Same as Internal Pages','royal-shop'),
+        'active-sidebar' => __('Active Both Sidebar','royal-shop'),
+        'no-sidebar' => __('No Sidebar','royal-shop'),
+        'disable-left-sidebar'  => __('Disable Left Sidebar','royal-shop'),
+        'disable-right-sidebar' => __('Disable Right Sidebar','royal-shop'),
         ),
     ));
 

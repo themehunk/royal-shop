@@ -470,9 +470,9 @@ if ( ! class_exists( 'royal_shop_Woocommerce_Ext' ) ) :
 		 */
         function royal_shop_before_shop_loop(){
         echo '<div class="wzta-list-grid-switcher">';
-        echo '<a title="' . esc_attr__('Grid View', 'royal-shop') . '" href="#" data-type="grid" class="wzta-grid-view selected"><i class="fa fa-th"></i></a>';
+        echo '<a title="' . esc_attr__('Grid View', 'royal-shop') . '" href="#" data-type="grid" class="wzta-grid-view selected"><i class="th-icon th-icon-th-col"></i></a>';
 
-        echo '<a title="' . esc_attr__('List View', 'royal-shop') . '" href="#" data-type="list" class="wzta-list-view"><i class="fa fa-bars"></i></a>';
+        echo '<a title="' . esc_attr__('List View', 'royal-shop') . '" href="#" data-type="list" class="wzta-list-view"><i class="th-icon th-icon-th-list"></i></a>';
 
         echo '</div>';
         }

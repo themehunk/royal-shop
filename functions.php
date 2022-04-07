@@ -101,18 +101,18 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                 'active_filename' => 'woocommerce/woocommerce.php',
                 'slug'			=>	'woocommerce',
             ),
-            'woo-smart-wishlist' => array(
-                 'name' => esc_html__( 'WPC Smart Wishlist for WooCommerce', 'royal-shop' ),
-                 'active_filename' => 'woo-smart-wishlist/wpc-smart-wishlist.php',
-                 'slug'				=>	'woo-smart-wishlist',
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'royal-shop' ),
+                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
+                 'slug'			=>	'yith-woocommerce-wishlist',
              ),
-            'woo-smart-compare' => array(
-                 'name' => esc_html__( 'WPC Smart Compare for WooCommerce', 'royal-shop' ),
-                 'active_filename' => 'woo-smart-compare/wpc-smart-compare.php',
-                 'slug'			=>	'woo-smart-compare',
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'TH Product Compare', 'royal-shop' ),
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+                 'slug'			=>	'th-all-in-one-woo-cart',
              ),
             'th-advance-product-search' => array(
-            'name' => esc_html__( 'TH Advance Product Search', 'm-shop' ),
+            'name' => esc_html__( 'TH Advance Product Search', 'royal-shop' ),
             'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             'slug'			=>	'th-advance-product-search',
             ),
@@ -287,6 +287,7 @@ function royal_shop_scripts(){
 	// enqueue css
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	wp_enqueue_style( 'font-awesome', ROYAL_SHOP_THEME_URI . 'third-party/fonts/font-awesome/css/font-awesome.css', '', ROYAL_SHOP_THEME_VERSION );
+	wp_enqueue_style( 'th-icon', ROYAL_SHOP_THEME_URI . 'third-party/fonts/th-icon/style.css', '', ROYAL_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'animate', ROYAL_SHOP_THEME_URI . 'css/animate.css','',ROYAL_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'royal-shop-menu', ROYAL_SHOP_THEME_URI . 'css/royal-shop-menu.css','',ROYAL_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'royal-shop-style', get_stylesheet_uri(), array(), ROYAL_SHOP_THEME_VERSION );

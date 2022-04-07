@@ -41,22 +41,11 @@ function royal_shop_menu_cart_view($cart_view){
 add_action( 'royal_shop_cart_count','royal_shop_menu_cart_view');
 
 function royal_shop_woo_cart_product(){
-global $woocommerce;
-?>
-<div class="cart-overlay"></div>
-<div id="open-cart" class="open-cart"> 
-  <div class="cart-widget-heading">
-  <a class="cart-close-btn"><?php _e('close','royal-shop');?></a></div> 
-<div class="royal-shop-quickcart-dropdown">
-<?php 
-woocommerce_mini_cart(); 
-?>
-</div>
-<?php if ($woocommerce->cart->is_empty() ) : ?>
-<a class="button return wc-backward" href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>"> <?php _e( 'Return to shop', 'royal-shop' ) ?> </a>
-<?php endif;?>
-</div>
-    <?php
+    if ( shortcode_exists('taiowc') ){
+        echo do_shortcode('[taiowc]');
+    }elseif ( shortcode_exists('taiowcp') ){
+        echo do_shortcode('[taiowcp]');
+    }
 }
 add_action( 'royal_shop_woo_cart', 'royal_shop_woo_cart_product' );
 add_filter('woocommerce_add_to_cart_fragments', 'royal_shop_add_to_cart_dropdown_fragment');
@@ -237,6 +226,8 @@ remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_p
 remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 add_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
 add_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
+//To disable th compare button 
+remove_action('woocommerce_init','th_compare_add_action_shop_list');
 //To integrate with a theme, please use bellow filters to hide the default buttons. hide default wishlist button on product archive page
 add_filter( 'woosw_button_position_archive', function() {
     return '0';
@@ -275,21 +266,29 @@ add_action( 'woocommerce_after_single_product_summary', 'royal_shop_single_summa
 /****************/
 // add to compare
 /****************/
-function royal_shop_add_to_compare_fltr($pid){
-      $product_id = $pid;
-         if( is_plugin_active('yith-woocommerce-compare/init.php') && (! class_exists( 'WPCleverWooscp' ))){
-          echo '<div class="wzta-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.home_url().'?action=yith-woocompare-add-product&id='.$product_id.'" class="compare button" data-product_id="'.$product_id.'" rel="nofollow">Compare</a></div></span></div>';
+function royal_shop_add_to_compare_fltr($pid = ''){
+
+      if (is_shop()) {
+        global $product;
+        $product_id='';
+        if(!empty($product)){    
+        $product_id = $product->get_id();
+        }
+      } else{
+        $product_id = $pid;
+      }
+     
+        if(class_exists(('th_product_compare') )){
+          echo '<div class="wzta-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a></div></span></div>';
            }
-           if( ( class_exists( 'WPCleverWooscp' ))){
-           echo '<div class="wzta-compare">'.do_shortcode('[wooscp id='.$product_id.']').'</div>';
-         }
+           
 }
 /**********************/
 /** wishlist **/
 /**********************/
 function royal_shop_whish_list($pid=''){
        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) && (! class_exists( 'WPCleverWoosw' ))){
-        echo '<div class="wzta-wishlist"><span class="wzta-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="fa fa-heart-o" label="wishlist" already_in_wishslist_text="Already" browse_wishlist_text="Added"]' ).'</span></div>';
+        echo '<div class="wzta-wishlist"><span class="wzta-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="th-icon th-icon-heart1" label="wishlist" already_in_wishslist_text="Already" browse_wishlist_text="Added"]' ).'</span></div>';
        }
        if( ( class_exists( 'WPCleverWoosw' ))){
         echo '<div class="wzta-wishlist"><span class="wzta-wishlist-inner">'.do_shortcode('[woosw id='.$pid.']').'</span></div>';
@@ -310,9 +309,9 @@ echo esc_html($user->display_name);
 /** My Account Menu **/
 function royal_shop_account(){
  if ( is_user_logged_in() ){?>
-<a class="account" href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') ));?>"><span class="account-text"><?php _e('Hello , ','royal-shop');?> <?php royal_shop_display_admin_name(); ?></span><span class="account-text"><?php _e('My account','royal-shop');?></span><i class="fa fa-user-o" aria-hidden="true"></i></a>
+<a class="account" href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') ));?>"><span class="account-text"><?php _e('Hello , ','royal-shop');?> <?php royal_shop_display_admin_name(); ?></span><span class="account-text"><?php _e('My account','royal-shop');?></span><i class="th-icon th-icon-user"></i></a>
 <?php } else {?>
-<span><a href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') ));?>"><span class="account-text"><?php _e('Login / Signup','royal-shop');?></span><span class="account-text"><?php _e('My account','royal-shop');?></span><i class="fa fa-lock" aria-hidden="true"></i></a></span>
+<span><a href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') ));?>"><span class="account-text"><?php _e('Login / Signup','royal-shop');?></span><span class="account-text"><?php _e('My account','royal-shop');?></span><i class="th-icon th-icon-lock1"></i></a></span>
 <?php }
  }
 

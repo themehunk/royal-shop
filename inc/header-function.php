@@ -75,9 +75,7 @@ if ( has_nav_menu('royal-shop-above-menu' ) ){?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
               <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -135,9 +133,7 @@ function royal_shop_top_header_conetnt_col2($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -197,9 +193,7 @@ function royal_shop_top_header_conetnt_col3($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -277,9 +271,7 @@ $royal_shop_menu_open = get_theme_mod('royal_shop_mobile_menu_open','left');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                 <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -344,9 +336,7 @@ $royal_shop_menu_open = get_theme_mod('royal_shop_mobile_menu_open','left');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -405,9 +395,7 @@ $royal_shop_menu_open = get_theme_mod('royal_shop_mobile_menu_open','left');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -497,9 +485,7 @@ else{
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                 <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -543,7 +529,6 @@ else{
            if(get_theme_mod('royal_shop_cart_mobile_disable') == false){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -551,7 +536,6 @@ else{
                       else{?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'royal_shop_cart_count' );
                                do_action( 'royal_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -576,7 +560,6 @@ else{
            if(get_theme_mod('royal_shop_cart_mobile_disable') == false){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -584,7 +567,6 @@ else{
                       else{?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'royal_shop_cart_count' );
                                do_action( 'royal_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -599,9 +581,7 @@ else{
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                 <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -654,7 +634,6 @@ else{
            if(get_theme_mod('royal_shop_cart_mobile_disable') == false){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -662,7 +641,6 @@ else{
                       else{?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'royal_shop_cart_count' );
                                do_action( 'royal_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -684,9 +662,7 @@ else{
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                 <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -738,7 +714,6 @@ else{
            if(get_theme_mod('royal_shop_cart_mobile_disable') == false){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -746,7 +721,6 @@ else{
                       else{?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'royal_shop_cart_count' );
                                do_action( 'royal_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -762,9 +736,7 @@ else{
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
                 <span class="icon-text"><?php esc_html_e('Menu','royal-shop'); ?></span>
             </button>
@@ -821,9 +793,7 @@ else{
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -837,7 +807,6 @@ else{
                       ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -845,7 +814,6 @@ else{
                       else{?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'royal_shop_cart_count' );
                                do_action( 'royal_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -955,13 +923,13 @@ $acc_icon = get_theme_mod('royal_shop_account_mobile_disable',false);
       if (wp_is_mobile()) {
           if($whs_icon != true){ ?>
              <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>">
-        <span class="wzta-whishlist-text"><?php echo __('My Favourite','royal-shop'); ?></span> <span><?php echo __('Wishlist','royal-shop'); ?></span><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <span class="wzta-whishlist-text"><?php echo __('My Favourite','royal-shop'); ?></span> <span><?php echo __('Wishlist','royal-shop'); ?></span><i  class="th-icon th-icon-heartline"></i></a>
          <?php }
       }
       else{ ?>
         <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>">
           <span class="wzta-whishlist-text"><?php echo __('My Favourite','royal-shop'); ?></span>
-          <span><?php echo __('Wishlist','royal-shop'); ?></span><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+          <span><?php echo __('Wishlist','royal-shop'); ?></span><i  class="th-icon th-icon-heartline"></i></a>
     <?php  }
        }
        if (wp_is_mobile()) {
@@ -1004,38 +972,24 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') == true
 }
        }
 
-    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){
+    if( class_exists( 'YITH_WCWL' ) ){
       if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') == true 
         || strpos($_SERVER['HTTP_USER_AGENT'], 'BlackBerry') == true 
         || strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') == true){
       if($whs_icon == false){ 
         ?>
       <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <i  class="th-icon th-icon-heartline"></i></a>
       
      <?php } }
      else{?>
         <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>">
-          <i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+          <i  class="th-icon th-icon-heartline"></i></a>
     <?php  } }
 
-    //WPC WISHLIST 
-     if( class_exists( 'WPCleverWoosw' )){
-      if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') == true 
-        || strpos($_SERVER['HTTP_USER_AGENT'], 'BlackBerry') == true 
-        || strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') == true){
-      if($whs_icon == false){ 
-        ?>
-      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i></a>
-     <?php } }
-     else{?>
-        <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i></a>
-    <?php  } }
 
         ?>
-            <a href="" class="wzta-search"><i class="fa fa-search"></i></a>
+            <a href="" class="wzta-search"><i class="th-icon th-icon-vector-search"></i></a>
        
 </div>
 <?php } 
@@ -1087,9 +1041,7 @@ add_action('royal_shop_site_preloader','royal_shop_preloader');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-stk">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -1135,7 +1087,6 @@ add_action('royal_shop_site_preloader','royal_shop_preloader');
              <?php if(class_exists( 'WooCommerce' )){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'royal_shop_cart_count' );
                          do_action( 'royal_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -1167,26 +1118,21 @@ endif;
 function royal_shop_mobile_navbar(){?>
 <div id="royal-shop-mobile-bar">
   <ul>
-    <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below fa fa-home" aria-hidden="true"></i></a><span> <?php echo __('Home','royal-shop'); ?></span></li>
-   <?php if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
-    <li><a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
+    <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below th-icon th-icon-home" aria-hidden="true"></i></a><span> <?php echo __('Home','royal-shop'); ?></span></li>
+   <?php if( class_exists( 'YITH_WCWL' ) ){ ?>
+    <li><a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
     <?php }
     if( class_exists( 'WPCleverWoosw' )){ ?>
-      <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
+      <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="th-icon th-icon-heartline"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
    <?php } ?>
     <li>
             <a href="#" class="menu-btn" id="mob-menu-btn">
               
-                <i class="fa fa-list-alt" aria-hidden="true"></i>              </a>
+               <i class="th-icon th-icon-TextEditor-Icons-01" ></i>               </a>
                 <span> <?php echo __('Menu','royal-shop'); ?></span>
  
        </li>
     <li><?php royal_shop_account();?><span> <?php echo __('Account','royal-shop'); ?></span></li>
-    <li><?php 
-           do_action( 'royal_shop_cart_count' ); 
-        ?> 
-        <span> <?php echo __('Cart','royal-shop'); ?></span>
-    </li>
     
   </ul>
 </div>
@@ -1253,6 +1199,6 @@ function royal_shop_th_advance_product_search(){
                 $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
                 $url = (function_exists("royal_shop_pro_load_plugin"))?$pro_url:$url;
 
-                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','m-shop').'</a>';
+                      echo '<a href="'.$url.'" target="_blank" class="plugin-active-msg">'.__('Please Install "th advance product search" Plugin','royal-shop').'</a>';
                     }
 }
