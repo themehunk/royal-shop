@@ -4,7 +4,7 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 5.3
 Tested up to: 5.8.2
 Requires PHP: 5.3
@@ -745,6 +745,12 @@ position:relative;
 }
 .below-header:before{
   background: #fff;
+}
+header .cart-count-item{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  left: -81px;
 }
 .responsive-main-header{
   position: relative;
@@ -2214,9 +2220,9 @@ color:#ff0052;
     position: relative;
     color: #3f3f3f;
     padding: 0px 20px 0px 0;
-}
-.header-icon .whishlist i{
-  font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-icon a:hover{
     color:#ff0052;
@@ -2237,9 +2243,18 @@ color:#ff0052;
 .account-text:nth-of-type(1){
   color: #c9e4ff;
 }
-.header-icon a i{
-font-size:21px;
-line-height: inherit;
+.header-icon a i,
+header .taiowc-icon .th-icon,
+header .th-icon{
+font-size: 32px;
+line-height: 32px;
+}
+header .th-icon{
+  font-size: 32px;
+  line-height: 32px;
+}
+header .taiowc-cart-item{
+  padding: 0;
 }
 /*widget css*/
 .royal-shop-widget-content ul,.royal-shop-widget-content ul li{
@@ -2942,8 +2957,8 @@ font-family: "Montserrat-Regular", sans-serif;
 .wzta-product .yith-wcwl-wishlistexistsbrowse:before, 
 .summary .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a::before,
 .yith-wcwl-wishlistaddedbrowse:before{
-    content: "\f004";
-    font-family:'fontawesome';
+    content: "\e909";
+    font-family: "th-icon";
     color:#00badb;
     margin: 0;
     font-size:14px;
@@ -2989,6 +3004,7 @@ z-index: 1;
 .wzta-wishlist .yith-wcwl-add-button > a i,
 .wzta-compare .compare-button a:before{
     font-size: 11px;
+    font-weight: initial;
 }
 .wzta-woo-product-list .wzta-quickview a{
   font-size: 13px; 
@@ -3006,6 +3022,9 @@ z-index: 1;
   font-size: 0;
   padding:0;
   font-weight:normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .wzta-compare .compare-button a:hover{
   background-color:transparent;
@@ -3126,8 +3145,8 @@ ul.products .wzta-product-hover .add_to_cart_button:hover:after,
     display: none;
 }
 .wzta-compare .compare-button a:before{
-    content: "\f0ec";
-    font-family: 'fontawesome';
+     content: "\e917";
+    font-family: "th-icon";
     display: block;
     margin: auto;
 }
@@ -4428,6 +4447,22 @@ display:none;
 .single-product .wzta-woo-product-list{
 text-align:left;
 }
+.single-product .summary .th-product-compare-btn-wrap{
+  display: inline-flex;
+  margin-left: 21px;
+}
+.woocommerce.single-product .summary .th-product-compare-btn,
+.woocommerce.single-product .summary .th-product-compare-btn:hover{
+  background: transparent;
+  font-family: 'Montserrat-Bold';
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.woocommerce.single-product .summary .th-product-compare-btn:before{
+    content: "\e917";
+    font-family: "th-icon";
+}
 .woocommerce div.product .flex-viewport {
     width: 83%;
     float: right;
@@ -4557,7 +4592,7 @@ section.upsells.products h2,.woocommerce #reviews #comments h2{
 }
 .single-product.woocommerce div.product form.cart{
   float: initial;
-  display: inline-block;
+  display: flex;
 }
 .single-product.woocommerce div.product form.cart .single_add_to_cart_button{
   flex-grow: 2;
@@ -7954,7 +7989,11 @@ text-decoration: underline !important;
   text-align: center;
 }
 
-
+.th-product-compare-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1300px){
   .header-icon span:nth-of-type(2),
@@ -8054,6 +8093,12 @@ header .mobile-nav-bar.sider.left,header .mobile-nav-bar.sider.right{
 .header-icon a.account span,
 .responsive-main-header .header-icon a span{
   text-align: center;
+}
+.responsive-main-header .taiowc-content .taiowc-total{
+  display: none;
+}
+header .cart-count-item{
+  left: -18px;
 }
 #search-box input[type='text'] {
     border-right: 0!important;
@@ -8241,6 +8286,9 @@ border:none
 .wzta-icon-market{
   justify-content: space-around;
 }
+.responsive-main-header .header-icon a{
+  padding: 0px 9px 0px 0;
+}
 }
 @media screen and (max-width: 990px){
 .sidebar-1 .menu-category-list{
@@ -8323,9 +8371,9 @@ border:none
 }
 }
 @media screen and (max-width: 795px){
-   .below-header-col1{
-      width:auto;
-    }
+.below-header-col1{
+  width:auto;
+}
 .cat-toggle {
     display: inline-flex;
 }
@@ -8579,6 +8627,10 @@ h5 {
   .responsive-main-header .header-icon a span{
     font-size: 11px;
     line-height: 21px;
+}
+.header-icon a i, header .taiowc-icon .th-icon, header .th-icon{
+  font-size: 27px;
+  line-height: 27px;
 }
 .slide-toogle{
 position:absolute;
@@ -8868,6 +8920,9 @@ cursor:pointer;
   margin: 0;
   padding: 0;
   margin-right: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-icon a:nth-of-type(1){
   width: auto;

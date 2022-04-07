@@ -471,6 +471,12 @@ if ( ! class_exists( 'Royal_Shop_Admin_Settings' ) ){
             elseif($plugin_slug=='th-advance-product-search'){
                 $active_file_name = $plugin_slug . '/th-advance-product-search.php';
                 }
+            elseif($plugin_slug=='yith-woocommerce-wishlist'){
+                $active_file_name = $plugin_slug . '/init.php';
+                }
+            elseif($plugin_slug=='th-all-in-one-woo-cart'){
+                $active_file_name = $plugin_slug . '/th-all-in-one-woo-cart.php';
+                }
             else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
@@ -537,6 +543,16 @@ if ( ! class_exists( 'Royal_Shop_Admin_Settings' ) ){
 				$detail='';
                 }elseif($plugin_slug=='th-advance-product-search'){
 				echo'<img src="'.esc_url( ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-advance-product-search.gif' ).'" />';
+
+	
+		        $detail='';
+                }elseif($plugin_slug=='yith-woocommerce-wishlist'){
+				echo'<img src="'.esc_url( ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/yith.jpg' ).'" />';
+
+	
+		        $detail='';
+                }elseif($plugin_slug=='th-all-in-one-woo-cart'){
+				echo'<img src="'.esc_url( ROYAL_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-compare.png' ).'" />';
 
 	
 		        $detail='';
