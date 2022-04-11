@@ -268,7 +268,7 @@ add_action( 'woocommerce_after_single_product_summary', 'royal_shop_single_summa
 /****************/
 function royal_shop_add_to_compare_fltr($pid = ''){
 
-      if (is_shop()) {
+      if (is_woocommerce()) {
         global $product;
         $product_id='';
         if(!empty($product)){    

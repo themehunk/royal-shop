@@ -274,7 +274,7 @@ if ( ! class_exists( 'royal_shop_Woocommerce_Ext' ) ) :
 		function royal_shop_add_scripts(){
 		   wp_enqueue_script( 'royal-shop-woocommerce-js', ROYAL_SHOP_THEME_URI .'inc/woocommerce/js/woocommerce.js', array( 'jquery' ), '1.0.0', true );
 		   $localize = array(
-				'ajaxUrl'  => esc_url(admin_url( 'admin-ajax.php' )),
+				'ajaxurl'  => esc_url(admin_url( 'admin-ajax.php' )),
 			);
            wp_localize_script( 'royal-shop-woocommerce-js', 'royalshop_woojs',  $localize );	
            wp_enqueue_script('royal-shop-quick-view', ROYAL_SHOP_THEME_URI.'inc/woocommerce/quick-view/js/quick-view.js', array( 'jquery' ), '', true );

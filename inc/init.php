@@ -12,7 +12,7 @@ get_template_part( 'inc/blog-function');
 //breadcrumbs
 get_template_part( 'lib/breadcrumbs/breadcrumbs');
 
-get_template_part('lib/theme-option/class-royal-shop-admin-settings');
+get_template_part( 'lib/th-option/th-option');
 
 //custom-style
 get_template_part( 'inc/royal-shop-custom-style');

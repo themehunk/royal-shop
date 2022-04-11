@@ -89,53 +89,88 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
 		) 
 		) );
 
-		// Recommend plugins
+		
+
+           // Recommend plugins
         add_theme_support( 'recommend-plugins', array(
-             'z-companion' => array(
+
+        	'z-companion' => array(
                 'name' => esc_html__( 'Z Companion', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
                 'active_filename' => 'z-companion/z-companion.php',
-                'slug'		=> 'z-companion',
             ),
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
-                'active_filename' => 'woocommerce/woocommerce.php',
-                'slug'			=>	'woocommerce',
-            ),
-            'yith-woocommerce-wishlist' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'royal-shop' ),
-                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
-                 'slug'			=>	'yith-woocommerce-wishlist',
-             ),
-            'th-product-compare' => array(
-                 'name' => esc_html__( 'TH Product Compare', 'royal-shop' ),
-                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
-                 'slug'			=>	'th-all-in-one-woo-cart',
-             ),
             'th-advance-product-search' => array(
             'name' => esc_html__( 'TH Advance Product Search', 'royal-shop' ),
+            'img' => 'icon-128x128.gif',
             'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
-            'slug'			=>	'th-advance-product-search',
+            ),
+            'th-all-in-one-woo-cart' => array(
+                 'name' => esc_html__( 'TH All In One Woo Cart', 'royal-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+             ),
+            'th-variation-swatches' => array(
+                'name' => esc_html__( 'TH Variation Swatches', 'royal-shop' ),
+                 'img' => 'icon-128x128.gif',
+                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
-                'slug'			 =>	'lead-form-builder',
             ),
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
-                'slug'			=>	'wp-popup-builder',
             ), 
+            'woocommerce' => array(
+                'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'woocommerce/woocommerce.php',
+            ),
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'TH Product Compare', 'royal-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
+             ),
+
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'royal-shop' ),
+                  'img' => 'icon-128x128.jpg',
+                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
+             ),
+            
+            
+
         ) );
 
-           // Useful plugins
-        add_theme_support( 'useful-plugins', array(
-             'themehunk-megamenu-plus' => array(
-                'name' => esc_html__( 'Megamenu plugin from Themehunk.', 'royal-shop' ),
-                'active_filename' => 'themehunk-megamenu-plus/themehunk-megamenu.php',
-                'slug'			=>	'themehunk-megamenu-plus',
-            )
-        ) );
+       // Import Data Content plugins
+        add_theme_support( 'import-demo-content', array(
+             'z-companion' => array(
+                'name' => esc_html__( 'Z Companion', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'z-companion/z-companion.php',
+            ),
+ 
+            'woocommerce' => array(
+                'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
+                'img' => 'icon-128x128.png',
+                'active_filename' => 'woocommerce/woocommerce.php',
+            ),
+            'th-advance-product-search' => array(
+            'name' => esc_html__( 'TH Advance Product Search', 'royal-shop' ),
+            'img' => 'icon-128x128.gif',
+            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
+            ),
+
+            'th-all-in-one-woo-cart' => array(
+                 'name' => esc_html__( 'TH All In One Woo Cart', 'royal-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+             ),
+
+        ));
         
 		// Add support for Custom Background.
         $args = array(
