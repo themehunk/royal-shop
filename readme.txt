@@ -1,9 +1,9 @@
 == Theme: Royal Shop ==
 Contributors: ThemeHunk
 Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
-Requires at least:5.3
+Requires at least:5.0
 Requires PHP: 5.3
-Tested up to: 5.8.2
+Tested up to: 5.9
 Stable tag: 1.0.8
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -29,6 +29,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Compare Plugin compatibity added in style.
 * New icons added.
 * Style issue resolved.
+* Theme Option Panel Changed
 
 = 1.0.7 =
 * Th advance product search plugin added.
@@ -72,6 +73,7 @@ Initial release
 * Compare Plugin compatibity added in style.
 * New icons added.
 * Style issue resolved.
+* Theme Option Panel Changed
 
 
 == Resources ==

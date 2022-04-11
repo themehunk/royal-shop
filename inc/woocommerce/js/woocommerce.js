@@ -104,7 +104,7 @@
                   $.ajax({
                       type: 'POST',
                       dataType: 'json',
-                      url: royalshop_woojs.ajaxUrl,
+                      url: royalshop_woojs.ajaxurl,
                       data: {
                        action :'royal_shop_search_site',
                        'match':matcher,                
