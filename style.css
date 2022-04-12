@@ -4,7 +4,7 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.0.8
+Version: 1.0.6
 Requires at least: 5.0
 Tested up to: 5.9
 Requires PHP: 5.3
@@ -4449,7 +4449,6 @@ text-align:left;
 }
 .single-product .summary .th-product-compare-btn-wrap{
   display: inline-flex;
-  margin-left: 21px;
 }
 .woocommerce.single-product .summary .th-product-compare-btn,
 .woocommerce.single-product .summary .th-product-compare-btn:hover{
@@ -5049,7 +5048,7 @@ clear: initial;
 /*wishlist icon*/
 .summary .yith-wcwl-add-to-wishlist {
     float: left;
-    margin: 0 0 17px 0;
+    margin: 0 21px 21px 0;
 }
 .summary .yith-wcwl-add-button, .summary .yith-wcwl-wishlistaddedbrowse,
  .summary .yith-wcwl-wishlistexistsbrowse {
@@ -6493,10 +6492,7 @@ font-size:30px;
 .sticky-header-col3 .header-icon a.whishlist,
 .sticky-header-col3 .header-icon a.account,
 .sticky-header-col3 .header-icon span a{
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 12px 0px 0px;
   padding:0;
   text-align: center;
 }
@@ -6529,11 +6525,6 @@ color:#fff;
 }
 .sticky-header .header-icon #open-cart .woocommerce-mini-cart a{
   width:95%;
-}
-.sticky-header-col3 .wzta-icon .cart-icon a.cart-contents i,
-.sticky-header .header-icon a i{
-  font-size:14px;
-  font-weight: bold;
 }
 .sticky-header .header-icon a:after {
 border-right:0;
@@ -8094,7 +8085,8 @@ header .mobile-nav-bar.sider.left,header .mobile-nav-bar.sider.right{
 .responsive-main-header .header-icon a span{
   text-align: center;
 }
-.responsive-main-header .taiowc-content .taiowc-total{
+.responsive-main-header .taiowc-content .taiowc-total,
+.sticky-header-bar .taiowc-content .taiowc-total{
   display: none;
 }
 header .cart-count-item{
@@ -8689,10 +8681,6 @@ right:15px
 .count-item{
   top: -11px;
 }
-/*sticky header*/
-.sticky-header-col3 .wzta-icon .cart-icon a.cart-contents i, .sticky-header .header-icon a i {
-    font-size: 14px;
-}
 .sticky-header-bar .menu-toggle .icon-bar {
     display: block !important;
     width: 20px;
@@ -8914,9 +8902,6 @@ cursor:pointer;
     text-align: center;
 }
 .header-icon a,.wzta-icon .cart-icon a.cart-contents{
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
   margin: 0;
   padding: 0;
   margin-right: 10px;
