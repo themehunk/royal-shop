@@ -1073,13 +1073,13 @@ add_action('royal_shop_site_preloader','royal_shop_preloader');
               <div class="wzta-icon">
         
                 <div class="header-icon">
-                  <a class="prd-search" href="#"><i class="fa fa-search"></i></a>     
+                  <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a>     
                      <?php 
                      if( class_exists( 'WPCleverWoosw' )){ ?>
                       <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
                   <?php   }
-                    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
-                      <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    if( class_exists( 'YITH_WCWL' )){ ?>
+                      <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline"></i></a>
                      <?php } 
                         royal_shop_account();
                        ?>

@@ -4449,7 +4449,6 @@ text-align:left;
 }
 .single-product .summary .th-product-compare-btn-wrap{
   display: inline-flex;
-  margin-left: 21px;
 }
 .woocommerce.single-product .summary .th-product-compare-btn,
 .woocommerce.single-product .summary .th-product-compare-btn:hover{
@@ -5049,7 +5048,7 @@ clear: initial;
 /*wishlist icon*/
 .summary .yith-wcwl-add-to-wishlist {
     float: left;
-    margin: 0 0 17px 0;
+    margin: 0 21px 21px 0;
 }
 .summary .yith-wcwl-add-button, .summary .yith-wcwl-wishlistaddedbrowse,
  .summary .yith-wcwl-wishlistexistsbrowse {
@@ -6493,10 +6492,7 @@ font-size:30px;
 .sticky-header-col3 .header-icon a.whishlist,
 .sticky-header-col3 .header-icon a.account,
 .sticky-header-col3 .header-icon span a{
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 12px 0px 0px;
   padding:0;
   text-align: center;
 }
@@ -6529,11 +6525,6 @@ color:#fff;
 }
 .sticky-header .header-icon #open-cart .woocommerce-mini-cart a{
   width:95%;
-}
-.sticky-header-col3 .wzta-icon .cart-icon a.cart-contents i,
-.sticky-header .header-icon a i{
-  font-size:14px;
-  font-weight: bold;
 }
 .sticky-header .header-icon a:after {
 border-right:0;
@@ -8094,7 +8085,8 @@ header .mobile-nav-bar.sider.left,header .mobile-nav-bar.sider.right{
 .responsive-main-header .header-icon a span{
   text-align: center;
 }
-.responsive-main-header .taiowc-content .taiowc-total{
+.responsive-main-header .taiowc-content .taiowc-total,
+.sticky-header-bar .taiowc-content .taiowc-total{
   display: none;
 }
 header .cart-count-item{
@@ -8689,10 +8681,6 @@ right:15px
 .count-item{
   top: -11px;
 }
-/*sticky header*/
-.sticky-header-col3 .wzta-icon .cart-icon a.cart-contents i, .sticky-header .header-icon a i {
-    font-size: 14px;
-}
 .sticky-header-bar .menu-toggle .icon-bar {
     display: block !important;
     width: 20px;
@@ -8914,9 +8902,6 @@ cursor:pointer;
     text-align: center;
 }
 .header-icon a,.wzta-icon .cart-icon a.cart-contents{
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
   margin: 0;
   padding: 0;
   margin-right: 10px;
