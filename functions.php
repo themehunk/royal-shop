@@ -182,6 +182,7 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
         add_theme_support( 'woocommerce', array(
                                                  'thumbnail_image_width' => 320,
                                              ) );
+        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'royal_shop_setup' );
