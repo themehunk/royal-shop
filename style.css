@@ -4,9 +4,9 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 5.0
-Tested up to: 6.0
+Tested up to: 6.1
 Requires PHP: 5.3
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -2272,14 +2272,16 @@ list-style: none;
     position:relative;
     background: transparent;
 }
-.sidebar-content-area .widget-title + *{
+.woocommerce .sidebar-content-area .widget-title + *,
+.wp-block-group__inner-container h2 + *{
   border: 1px solid #ebebeb;
     padding: 15px;
 }
 #sidebar-primary .widget{
   position:relative;
 }
-.open-widget-content .widget-title,.widget-title{
+.open-widget-content .widget-title,.widget-title,
+.royal-shop-widget-content h2{
   font-size: 14px;
   color:#111;
   line-height: 21px;
@@ -2686,8 +2688,13 @@ position:relative;
   border-bottom: 1px solid #f4f7f9;
   padding-right: 12px;
 }
+.wp-block-group__inner-container h2{
+  position: relative;
+  margin-bottom: 21px;
+}
 .wzta-title .title:after,
-.widget-title > span:after{
+.widget-title > span:after,
+.wp-block-group__inner-container h2:after{
 content: ' ';
     border-bottom: 3px solid #70b700;
     display: block;
@@ -3738,6 +3745,7 @@ display: -webkit-box;
 .wzta-hglt-box .content{
 padding-left: 15px;
     text-align: left;
+    flex-grow: 2;
 }
 .wzta-hglt-icon{
     color: #26272c;
@@ -4461,6 +4469,7 @@ text-align:left;
 .woocommerce.single-product .summary .th-product-compare-btn:before{
     content: "\e917";
     font-family: "th-icon";
+    margin-right: 9px;
 }
 .woocommerce div.product .flex-viewport {
     width: 83%;
@@ -7985,7 +7994,9 @@ text-decoration: underline !important;
   align-items: center;
   justify-content: center;
 }
-
+.wp-block-latest-comments__comment{
+  line-height: inherit;
+}
 @media screen and (max-width: 1300px){
   .header-icon span:nth-of-type(2),
   .cart-content{
@@ -8246,12 +8257,13 @@ box-shadow:none;
 }
 /*   ribbon */
 .wzta-highlight-col{
-  width: 33.33%;
+  width: 48%;
 }
 .wzta-highlight-col:nth-of-type(4n+4){
   border-right: 1px solid #e4e9ef;
 }
-.wzta-highlight-col:nth-of-type(3n+3){
+.wzta-highlight-col:nth-of-type(3n+3),
+.wzta-highlight-col:nth-of-type(2n+2){
   border-right: 0;
 }
 }
