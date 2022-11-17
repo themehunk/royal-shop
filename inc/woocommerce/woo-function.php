@@ -228,6 +228,8 @@ add_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_des
 add_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10 );
 //To disable th compare button 
 remove_action('woocommerce_init','th_compare_add_action_shop_list');
+//To disable th compare Pro button 
+remove_action('woocommerce_init', 'tpcp_add_action_shop_list');
 //To integrate with a theme, please use bellow filters to hide the default buttons. hide default wishlist button on product archive page
 add_filter( 'woosw_button_position_archive', function() {
     return '0';
@@ -278,8 +280,8 @@ function royal_shop_add_to_compare_fltr($pid = ''){
         $product_id = $pid;
       }
      
-        if(class_exists(('th_product_compare') )){
-          echo '<div class="wzta-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a></div></span></div>';
+        if(class_exists('th_product_compare') || class_exists('Tpcp_product_compare') ){
+          echo '<div class="wzta-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a class="th-product-compare-btn compare button" data-th-product-id="'.esc_attr($product_id).'"></a></div></span></div>';
            }
            
 }
