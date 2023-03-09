@@ -124,6 +124,11 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
             ), 
+            'unlimited-blocks' => array(
+                'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
+            ), 
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
                  'img' => 'icon-128x128.png',
@@ -182,7 +187,6 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
         add_theme_support( 'woocommerce', array(
                                                  'thumbnail_image_width' => 320,
                                              ) );
-        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'royal_shop_setup' );

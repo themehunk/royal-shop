@@ -4,14 +4,14 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.0.8
+Version: 1.0.9
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 5.3
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: royal-shop
-Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1853,6 +1853,9 @@ opacity: 1;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
     font-size: 13px;
+}
+.wzta-product-cat-list li a span{
+  font-family: "FontAwesome";
 }
 .wzta-product-cat-list > li > a i {
     text-shadow: none;
@@ -6808,7 +6811,7 @@ border-radius: 50%;
 }
 #move-to-top{
     right: 30px;
-    bottom: 30px;
+    bottom: 152px;
 }
 #move-to-top:not(.filling){
     opacity: 0;
@@ -8831,7 +8834,7 @@ font-size:21px
 /**************/
 .wzta-product-cat-list li a {
     line-height: 1.3;
-    padding: 8px;
+    padding: 12px 8px;
     font-size: 12px;
 }
 .wzta-slide .owl-nav {
@@ -9504,7 +9507,7 @@ display:none;
 }
 #move-to-top {
     right: 21px;
-    bottom: 70px;
+    bottom: 152px;
 }
 #royal-shop-mobile-bar .account-text{
 display:none;

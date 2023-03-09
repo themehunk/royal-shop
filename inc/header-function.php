@@ -1192,9 +1192,14 @@ add_action( 'royal_shop_main_header', 'royal_shop_open_cart_mobile_panel' );
 //*******************************
 
 function royal_shop_th_advance_product_search(){
-  if ( shortcode_exists('th-aps') ){
+   if ( shortcode_exists('tapsp') ){
+
+                echo do_shortcode('[tapsp]');
+
+              }
+              elseif ( shortcode_exists('th-aps') ){
                 echo do_shortcode('[th-aps]');
-              } elseif ( !shortcode_exists('th-aps') && is_user_logged_in()) {
+              } elseif ( !shortcode_exists('th-aps') && !shortcode_exists('tapsp') &&is_user_logged_in()) {
                 $url = admin_url('themes.php?page=royal-shop&searchp');
                 $pro_url =admin_url('plugin-install.php?s=th%20advance%20product%20search&tab=search&type=term');
                 $url = (function_exists("royal_shop_pro_load_plugin"))?$pro_url:$url;
