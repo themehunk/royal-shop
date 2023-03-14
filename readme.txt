@@ -31,6 +31,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 * Theme made compatible with Block Editor.
 * Move To Top Style Modificattion.
 * Blank Template Added.
+* Editor.css Added.
 
 = 1.0.8 =
 * Style Improved.
@@ -87,6 +88,7 @@ Initial release
 * Theme made compatible with Block Editor.
 * Move To Top Style Modificattion.
 * Blank Template Added.
+* Editor.css Added.
 
 
 == Resources ==
