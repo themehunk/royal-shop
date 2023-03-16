@@ -65,8 +65,14 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
 
         // Enqueue editor styles.
         add_editor_style( 'style-editor.css' );
+
+		add_editor_style( 'editor.css' );
+
         // Add support for responsive embedded content.
         add_theme_support( 'responsive-embeds' );
+
+		add_theme_support( 'custom-spacing' );
+		
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 		/**
@@ -123,6 +129,11 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'royal-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
+            ), 
+            'unlimited-blocks' => array(
+                'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
             ), 
             'woocommerce' => array(
                 'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
@@ -182,7 +193,6 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
         add_theme_support( 'woocommerce', array(
                                                  'thumbnail_image_width' => 320,
                                              ) );
-        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'royal_shop_setup' );

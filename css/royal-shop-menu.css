@@ -60,7 +60,7 @@ font-size: 13px;
     width: 10px;
 }
 .royal-shop-menu li ul.sub-menu li > a > .arrow:before {
-    content: "\f105" !important;
+    content: "\f105";
 }
 
 .royal-shop-menu  ul.sub-menu {
@@ -112,7 +112,7 @@ background-color: #fff;
     font-size: 16px;
     font-family: FontAwesome;
     height: auto;
-    content: "\f104";
+    content: "\f105";
     text-shadow: none;
 }
 .royal-shop-menu > li > ul.sub-menu > li ul.sub-menu {
@@ -188,7 +188,7 @@ ul[data-menu-style="accordion"] > li > a > .arrow:before {
     content: "\f105";
 }
 ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before {
-    content: "\f107" !important;
+    content: "\f107";
 }
 ul[data-menu-style="accordion"] > li > ul.sub-menu {
     position: static;
@@ -219,6 +219,20 @@ transition: all 0.2s ease-in-out;
 /*end hamburger menu*/
 /****************************/
 @media screen and (max-width: 1024px){
+.royal-shop-menu li,
+.royal-shop-menu a,
+ul[data-menu-style="accordion"] li,
+ul[data-menu-style="accordion"] a{
+    position: relative;
+}
+.royal-shop-menu li ul.sub-menu li > a > .arrow:before,
+ul[data-menu-style="accordion"] > li > a > .arrow:before,
+.wzta-product-cat-list > li > ul.sub-menu li > a > .arrow:before{
+    content: "\f107";
+}
+ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before{
+    content: "\f106";
+}
 .sider-inner .panel{
     padding: 15px;
 }
@@ -329,7 +343,7 @@ display: -webkit-inline-box;
         position: static;
     }
     .royal-shop-menu li ul.sub-menu li.menu-active > a > .arrow:before {
-        content: "\f107" !important;
+        content: "\f106";
     }
   .royal-shop-menu > li > a,.top-header-bar .royal-shop-menu > li > a, 
     .bottom-header-bar .royal-shop-menu > li > a {
