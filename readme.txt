@@ -1,10 +1,10 @@
 == Theme: Royal Shop ==
 Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
-Requires at least:5.0
-Requires PHP: 5.3
-Tested up to: 6.1
-Stable tag: 1.0.9
+Requires at least:5.5
+Requires PHP: 5.6
+Tested up to: 6.2
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -23,6 +23,10 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+= 1.1.0=
+Update: Style Improved.
+Update: Theme tested with latest WordPress 6.2.
+
 = 1.0.9=
 * Style Improved.
 * TH Advance Search Pro Integrated.
@@ -80,15 +84,9 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.0.9=
-* Style Improved.
-* TH Advance Search Pro Integrated.
-* Unlimited Blocks Plugin added.
-* Tags Added.
-* Theme made compatible with Block Editor.
-* Move To Top Style Modificattion.
-* Blank Template Added.
-* Editor.css Added.
+= 1.1.0=
+Update: Style Improved.
+Update: Theme tested with latest WordPress 6.2.
 
 
 == Resources ==
