@@ -28,8 +28,10 @@ $royal_shop_pages_sidebar = royal_shop_pages_sidebar();
                         <div id="primary" class="primary-content-area">
                             <div class="primary-content-wrap">
                             <div class="page-head">
-                            <?php royal_shop_get_page_title();?>
-                            <?php royal_shop_breadcrumb_trail();?>
+                            <?php royal_shop_get_page_title();
+                            if (function_exists('woocommerce_breadcrumb')) {
+                                woocommerce_breadcrumb();
+                                } ?>
                             </div>
                             <?php woocommerce_content();?>  
                            </div> 

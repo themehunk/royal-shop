@@ -105,6 +105,11 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'z-companion/z-companion.php',
             ),
+			'vayu-blocks' => array(
+				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'royal-shop' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'vayu-blocks/vayu-blocks.php',
+				),
             'th-advance-product-search' => array(
             'name' => esc_html__( 'TH Advance Product Search', 'royal-shop' ),
             'img' => 'icon-128x128.gif',
@@ -112,45 +117,29 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
             ),
             'th-all-in-one-woo-cart' => array(
                  'name' => esc_html__( 'TH All In One Woo Cart', 'royal-shop' ),
-                  'img' => 'icon-128x128.png',
+                  'img' => 'icon-128x128.gif',
                  'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
              ),
+			 'th-product-compare' => array(
+                 'name' => esc_html__( 'TH Product Compare', 'royal-shop' ),
+                  'img' => 'icon-128x128.gif',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
+             ),
+			 'lead-form-builder' => array(
+                'name' => esc_html__( 'Lead Form Builder', 'royal-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'lead-form-builder/lead-form-builder.php',
+            ),
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'TH Variation Swatches', 'royal-shop' ),
                  'img' => 'icon-128x128.gif',
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
-            ),
-            'lead-form-builder' => array(
-                'name' => esc_html__( 'Lead Form Builder', 'royal-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'royal-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'wp-popup-builder/wp-popup-builder.php',
             ), 
-            'unlimited-blocks' => array(
-                'name' => esc_html__( 'Unlimited blocks For Gutenberg', 'royal-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
-            ), 
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
-                 'img' => 'icon-128x128.png',
-                'active_filename' => 'woocommerce/woocommerce.php',
-            ),
-            'th-product-compare' => array(
-                 'name' => esc_html__( 'TH Product Compare', 'royal-shop' ),
-                  'img' => 'icon-128x128.png',
-                 'active_filename' => 'th-product-compare/th-product-compare.php',
-             ),
-
-            'yith-woocommerce-wishlist' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'royal-shop' ),
-                  'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
-             ),
             
             
 
@@ -162,24 +151,7 @@ define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );
                 'name' => esc_html__( 'Z Companion', 'royal-shop' ),
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'z-companion/z-companion.php',
-            ),
- 
-            'woocommerce' => array(
-                'name' => esc_html__( 'Woocommerce', 'royal-shop' ),
-                'img' => 'icon-128x128.png',
-                'active_filename' => 'woocommerce/woocommerce.php',
-            ),
-            'th-advance-product-search' => array(
-            'name' => esc_html__( 'TH Advance Product Search', 'royal-shop' ),
-            'img' => 'icon-128x128.gif',
-            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
-            ),
-
-            'th-all-in-one-woo-cart' => array(
-                 'name' => esc_html__( 'TH All In One Woo Cart', 'royal-shop' ),
-                  'img' => 'icon-128x128.png',
-                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
-             ),
+            )
 
         ));
         
