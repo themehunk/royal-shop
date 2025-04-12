@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'royal_shop_setup' ) ) :
-define( 'ROYAL_SHOP_THEME_VERSION','1.0.0');
+define( 'ROYAL_SHOP_THEME_VERSION','1.1.3');
 define( 'ROYAL_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'ROYAL_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'ROYAL_SHOP_THEME_SETTINGS', 'royal-shop-settings' );

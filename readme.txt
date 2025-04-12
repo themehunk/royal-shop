@@ -3,8 +3,8 @@ Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-image-header, featured-images, custom-header, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: WordPress 5.5
 Requires PHP: 5.5
-Tested up to: 6.7
-Stable tag: 1.1.2
+Tested up to: 6.8
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -24,6 +24,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 
+= 1.1.3=
+Update: Theme tested with WordPress 6.8.
 
 = 1.1.2=
 New: New theme.json version 3 added.
@@ -96,11 +98,8 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.1.2=
-New: New theme.json version 3 added.
-Update: Theme Options modified and updated.
-Update: Style Improved.
-Update: New Wishlist integrated and style improved.
+= 1.1.3=
+Update: Theme tested with WordPress 6.8.
 
 
 == Resources ==
