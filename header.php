@@ -28,18 +28,6 @@
 
 <?php do_action('royal_shop_site_preloader'); ?>
 <div id="page" class="royal-shop-site">
-	<header>
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'royal-shop' ); ?></a>
-		<?php do_action( 'royal_shop_sticky_header' ); ?> 
-        <!-- sticky header -->
-		<?php if(get_theme_mod('royal_shop_above_mobile_disable',true)==true){
-			if (wp_is_mobile()!== true):
-              do_action( 'royal_shop_top_header' );  
-              endif;
-		}elseif(get_theme_mod('royal_shop_above_mobile_disable',true)==false){
-			 do_action( 'royal_shop_top_header' );  
-		} ?> 
-		<!-- end top-header -->
-        <?php do_action( 'royal_shop_main_header' ); ?> 
-		<!-- end main-header -->
-	</header> <!-- end header -->
+	<?php do_action( 'royal_shop_before_header' ); ?>
+	<?php do_action( 'royal_shop_header' ); ?>
+	<?php do_action( 'royal_shop_after_header' ); ?>

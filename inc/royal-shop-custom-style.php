@@ -116,19 +116,6 @@ $royal_shop_style.=".toggle-cat-wrap,#search-button,.wzta-icon .cart-icon,.singl
       background: #{$royal_shop_background_color};
     }
     ";
-    //Hide yith if WPC SMART Icon 
-if( (class_exists( 'WPCleverWoosw' ))){
-$royal_shop_style.=" .woocommerce .entry-summary .yith-wcwl-add-to-wishlist{
-  display:none;
-}
-";
-}
-if( (class_exists( 'WPCleverWooscp' ))){
-$royal_shop_style.=" .woocommerce .entry-summary a.compare.button{
-  display:none;
-}
-";
-}
 
 //Move to top 
 $royal_shop_move_to_top_bg_clr      = esc_html(get_theme_mod('royal_shop_move_to_top_bg_clr'));

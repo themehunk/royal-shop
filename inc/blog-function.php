@@ -117,3 +117,45 @@ royal_shop_scrolling_ajax();
 }
 }
 endif;
+
+/**************************************/
+// Wrapper of header markup
+/**************************************/
+if ( !function_exists('royal_shop_full_header_markup') ) {
+function royal_shop_full_header_markup() { ?>
+  <header>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'royal-shop' ); ?></a>
+		<?php do_action( 'royal_shop_sticky_header' ); ?> 
+        <!-- sticky header -->
+		<?php if(get_theme_mod('royal_shop_above_mobile_disable',true)==true){
+			if (wp_is_mobile()!== true):
+              do_action( 'royal_shop_top_header' );  
+              endif;
+		}elseif(get_theme_mod('royal_shop_above_mobile_disable',true)==false){
+			 do_action( 'royal_shop_top_header' );  
+		} ?> 
+		<!-- end top-header -->
+        <?php do_action( 'royal_shop_main_header' ); ?> 
+		<!-- end main-header -->
+   </header> <!-- end header -->
+<?php }
+add_action('royal_shop_header', 'royal_shop_full_header_markup');
+}
+
+if ( !function_exists('royal_shop_full_footer_markup') ) {
+function royal_shop_full_footer_markup() { ?>
+  	<footer>
+         <?php 
+          // top-footer 
+          do_action( 'royal_shop_top_footer' ); 
+          // widget-footer
+		      do_action( 'royal_shop_widget_footer' );
+		      // below-footer
+          do_action( 'royal_shop_below_footer' );  
+        ?>
+     </footer> <!-- end footer -->
+    <?php }
+
+// Hook the custom footer function into 'zita_footer'
+add_action('royal_shop_footer', 'royal_shop_full_footer_markup');
+}

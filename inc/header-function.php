@@ -919,7 +919,7 @@ $acc_icon = get_theme_mod('royal_shop_account_mobile_disable',false);
 ?>
 <div class="header-icon">
      <?php 
-    if( class_exists( 'YITH_WCWL' )){
+    if( shortcode_exists( 'thwl_add_to_wishlist' ) || class_exists( 'YITH_WCWL' )){
       if (wp_is_mobile()) {
           if($whs_icon != true){ ?>
              <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>">
@@ -972,7 +972,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') == true
 }
        }
 
-    if( class_exists( 'YITH_WCWL' ) ){
+    if( shortcode_exists( 'thwl_add_to_wishlist' ) || class_exists( 'YITH_WCWL' ) ){
       if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') == true 
         || strpos($_SERVER['HTTP_USER_AGENT'], 'BlackBerry') == true 
         || strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') == true){
@@ -1075,10 +1075,7 @@ add_action('royal_shop_site_preloader','royal_shop_preloader');
                 <div class="header-icon">
                   <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a>     
                      <?php 
-                     if( class_exists( 'WPCleverWoosw' )){ ?>
-                      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
-                  <?php   }
-                    if( class_exists( 'YITH_WCWL' )){ ?>
+                    if( shortcode_exists( 'thwl_add_to_wishlist' ) || class_exists( 'YITH_WCWL' )){ ?>
                       <a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline"></i></a>
                      <?php } 
                         royal_shop_account();
@@ -1119,12 +1116,9 @@ function royal_shop_mobile_navbar(){?>
 <div id="royal-shop-mobile-bar">
   <ul>
     <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below th-icon th-icon-home" aria-hidden="true"></i></a><span> <?php echo __('Home','royal-shop'); ?></span></li>
-   <?php if( class_exists( 'YITH_WCWL' ) ){ ?>
+   <?php if( shortcode_exists( 'thwl_add_to_wishlist' ) || class_exists( 'YITH_WCWL' ) ){ ?>
     <li><a class="whishlist" href="<?php echo esc_url( royal_shop_whishlist_url() ); ?>"><i  class="th-icon th-icon-heartline"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
-    <?php }
-    if( class_exists( 'WPCleverWoosw' )){ ?>
-      <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="th-icon th-icon-heartline"></i></a><span> <?php echo __('Wishlist','royal-shop'); ?></span></li>
-   <?php } ?>
+    <?php } ?>
     <li>
             <a href="#" class="menu-btn" id="mob-menu-btn">
               
