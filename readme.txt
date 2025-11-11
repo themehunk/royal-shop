@@ -36,6 +36,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 9. Update: Header implementation through hooks using do_action( 'royal_shop_header' );
 10. Update: Footer implementation through hooks using do_action( 'royal_shop_footer' );
 11. Update: Absolute path in th-icon issue resolved.
+12. royal_shop_post_class() function modified generating error in product not having gallery images.
 
 = 1.1.3=
 Update: Theme tested with WordPress 6.8.
