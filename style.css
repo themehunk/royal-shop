@@ -4,7 +4,7 @@ Theme URI: https://wpzita.com/product/royal-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Royal Shop is All in one eCommerce WordPress Theme.  Its beautiful and clear style has been designed to showcase your products and increase your sales. You can use Royal Shop for electronics & computers, Restaurant & Grocery, marketplace, toys & kids, tools & parts, beauty, health, clothing & fashion, watch & jewelry, home & furniture, sports etc.  It comes with useful prebuilt homepages that are installable in just one click. Fully responsive theme, Best for any devices such as mobile, desktop, laptop, iPad. It also has various header and footer layouts so you can showcase your menus and other elements. Some cool sections are  - Main Slider Layouts, Filter Product Slider, Product Slider, Products Categories slider, List View Slider,  Banner section with 2 layouts, Brands and Services section. It also offers Ajax search, Fixed sidebar for Homepage & Inner page, Preloader, Social icons,  Basic Color & background settings, Multiple widget support, WooCommerce products settings and much more.  This theme supports ultimate WooCommerce plugin which will help you power up online visibility, sales and profits.
-Version: 1.1.3
+Version: 1.1.4
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.5
@@ -3194,6 +3194,9 @@ ul.products .wzta-product-hover .add_to_cart_button:hover:after,
   font-size:11px;
   color: #111;
 }
+.wzta-product .thw-add-to-wishlist-button.no-style .thw-icon{
+  font-size: inherit;
+}
 .wzta-rating-cont{
   display: flex;
   align-items: center;
@@ -3275,8 +3278,8 @@ ul.products .wzta-product-hover .add_to_cart_button:hover:after,
 .wzta-product-hover{
     position: absolute;
     display: block;
-    left: 1px;
-    right: 1px;
+    left: -1px;
+    right: -1px;
     top:108%;
     display: flex;
     flex-wrap: wrap;
@@ -3309,6 +3312,7 @@ ul.products .wzta-product-hover .add_to_cart_button:hover:after,
     z-index:15;
 }
 .wzta-product{
+  position: relative;
     padding: 20px;
     border: 1px solid transparent;
     background: transparent;
@@ -4460,6 +4464,10 @@ text-align:left;
 .single-product .summary .th-product-compare-btn-wrap{
   display: inline-flex;
 }
+.summary .thunk-compare,
+.thw-add-to-wishlist-button-wrap.th-wishlist-single{
+  float: left;
+}
 .woocommerce.single-product .summary .th-product-compare-btn,
 .woocommerce.single-product .summary .th-product-compare-btn:hover,
 .summary .yith-wcwl-add-to-wishlist-button{
@@ -5383,7 +5391,6 @@ border-radius:3px 0px 0px 3px;
 .woocommerce-checkout #search-button{
     top: 15px;
 }
-.woocommerce-checkout .wzta-content-wrap{display:-webkit-flex;}
 .woocommerce #order_review table.shop_table thead th {
     font-size: 15px;
     letter-spacing: 1px;
@@ -6083,6 +6090,10 @@ display: -webkit-box;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    justify-content: space-between;
+}
+.woocommerce .woocommerce-breadcrumb{
+  margin: 0;
 }
 .page-head h1{
 color:#111;
@@ -7714,8 +7725,6 @@ color: #333;
 .wzta-wishlist *, 
 .wzta-compare *{
   position: relative!important;
-  height: 100%!important;
-display: block;
 }
 
 .wzta-compare .compare-button a:before,
@@ -7824,13 +7833,27 @@ display: block;
   padding: 0;
   margin-left: 20px;
 }
-.woocommerce .wzta-single-product-summary-wrap a.compare.button{
+.woocommerce .wzta-single-product-summary-wrap a.compare.button,
+.th-wishlist-single a{
   width: auto;
   height: auto;
  line-height: initial;
   color: #111;
   font-family: 'Montserrat-Bold';
 
+}
+.wzta-single-product-summary-wrap a.compare .icon{
+  display: none;
+}
+.wzta-single-product-summary-wrap svg{
+  width: 18px;
+}
+.wzta-single-product-summary-wrap .th-product-compare-btn .text{
+  margin-left: 0;
+}
+.yith-add-to-wishlist-button-block.yith-add-to-wishlist-button-block--single{
+  margin: 0 0 12px 5px;
+  display: inline-flex;
 }
 .woocommerce .wzta-single-product-summary-wrap a.compare.button:before{
   color: #111;
@@ -8439,7 +8462,6 @@ margin:0;
     text-align:center;
 }
 .wzta-wishlist a, .wzta-compare a {
-    font-size: 0;
     margin:0;
     display: block;
 }
@@ -9587,6 +9609,13 @@ display:none;
 }
 .wzta-ribbon-content-col3{
   display: none;
+}
+.yith-add-to-wishlist-button-block.yith-add-to-wishlist-button-block--single{
+  clear: both;
+  float: left;
+}
+.comment-form{
+  width: 100%;
 }
 }
 

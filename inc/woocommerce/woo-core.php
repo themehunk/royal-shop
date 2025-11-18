@@ -168,6 +168,8 @@ if ( ! class_exists( 'royal_shop_Woocommerce_Ext' ) ) :
 		 */
 		function royal_shop_post_class( $classes ){
 
+			 // Only run inside WooCommerce product loops (shop, archive, related, upsell, cross-sell)
+   		 if ( !( is_product() && function_exists( 'wc_get_loop_prop' ) && !wc_get_loop_prop( 'name' ) )) {
 			if (!royal_shop_is_blog()|| is_shop() || is_product_taxonomy() || post_type_exists( 'product' )){
                 $classes[] = 'wzta-woo-product-list';
 				$qv_enable = get_theme_mod( 'royal_shop_woo_quickview_enable',true);
@@ -221,6 +223,7 @@ if ( ! class_exists( 'royal_shop_Woocommerce_Ext' ) ) :
 			  }
 		
 		   }
+		}
 			return $classes;
 		}
 		/**
