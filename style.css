@@ -4477,11 +4477,6 @@ text-align:left;
   font-size: 14px;
   line-height: 21px;
 }
-.woocommerce.single-product .summary .th-product-compare-btn:before{
-    content: "\e917";
-    font-family: "th-icon";
-    margin-right: 9px;
-}
 .woocommerce div.product .flex-viewport {
     width: 83%;
     float: right;
@@ -4609,9 +4604,15 @@ section.upsells.products h2,.woocommerce #reviews #comments h2{
 .single-product.woocommerce-page ul.products li.product .woocommerce-loop-product__link{
   margin: 0;
 }
-.single-product.woocommerce div.product form.cart{
+.single-product.woocommerce div.product form.cart,
+.single-product.woocommerce div.product .woocommerce-variation-add-to-cart{
   float: initial;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.single-product.woocommerce .summary .thunk-compare{
+  margin-left: 9px;
 }
 .single-product.woocommerce div.product form.cart .single_add_to_cart_button{
   flex-grow: 2;
@@ -4942,7 +4943,6 @@ margin:0px 0px 0px 10px;
     display: inline-block;
     float: left;
     line-height: 36px;
-    margin-right: 15px;
     text-align: center;
     padding: 0 10px;
     min-width: 110px;
