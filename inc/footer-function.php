@@ -270,7 +270,7 @@ if ( ! function_exists( 'royal_shop_top_footer_conetnt_col1' ) ){
 function royal_shop_top_footer_conetnt_col1($content){ ?>
 <?php if($content=='text'){?>
 <div class="content-html">
-<?php echo esc_html(get_theme_mod('royal_shop_footer_col1_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+<?php echo esc_html(get_theme_mod('royal_shop_footer_col1_texthtml'));?>
 </div>
 <?php }
 elseif($content=='menu'){
@@ -304,7 +304,7 @@ if ( ! function_exists( 'royal_shop_top_footer_conetnt_col2' ) ){
 function royal_shop_top_footer_conetnt_col2($content){ ?>
 <?php if($content=='text'){?>
 <div class="content-html">
-  <?php echo esc_html(get_theme_mod('royal_shop_above_footer_col2_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_above_footer_col2_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-footer-menu' ) ){?>
@@ -337,7 +337,7 @@ if ( ! function_exists( 'royal_shop_top_footer_conetnt_col3' ) ){
 function royal_shop_top_footer_conetnt_col3($content){?>
 <?php if($content=='text'){?>
 <div class="content-html">
-<?php echo esc_html(get_theme_mod('royal_shop_above_footer_col3_texthtml',  __( 'Add your content here', 'royal-shop' )));;?>
+<?php echo esc_html(get_theme_mod('royal_shop_above_footer_col3_texthtml'));;?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-footer-menu' ) ){ ?>
@@ -404,7 +404,7 @@ if ( ! function_exists( 'royal_shop_bottom_footer_conetnt_col2' ) ){
 function royal_shop_bottom_footer_conetnt_col2($content){ ?>
 <?php if($content=='text'){?>
 <div class="content-html">
-  <?php echo esc_html(get_theme_mod('royal_shop_bottom_footer_col2_texthtml','Add your content here'));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_bottom_footer_col2_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-footer-menu' ) ) {?>
@@ -438,7 +438,7 @@ if ( ! function_exists( 'royal_shop_bottom_footer_conetnt_col3' ) ){
 function royal_shop_bottom_footer_conetnt_col3($content){ ?>
 <?php if($content=='text'){?>
 <div class="content-html">
-  <?php echo esc_html(get_theme_mod('royal_shop_bottom_footer_col3_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_bottom_footer_col3_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-footer-menu' ) ) {?>

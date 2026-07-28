@@ -66,7 +66,7 @@ if ( ! function_exists( 'royal_shop_top_header_conetnt_col1' ) ){
 function royal_shop_top_header_conetnt_col1($content,$mobileopen){ ?>
 <?php if($content=='text'){?>
 <div class='content-html'>
-  <?php echo esc_html(get_theme_mod('royal_shop_col1_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_col1_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
 if ( has_nav_menu('royal-shop-above-menu' ) ){?>
@@ -124,7 +124,7 @@ if ( ! function_exists( 'royal_shop_top_header_conetnt_col2' ) ){
 function royal_shop_top_header_conetnt_col2($content,$mobileopen){ ?>
 <?php if($content=='text'){?>
 <div class='content-html'>
-  <?php echo esc_html(get_theme_mod('royal_shop_col2_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_col2_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-above-menu' ) ){?>
@@ -184,7 +184,7 @@ if ( ! function_exists( 'royal_shop_top_header_conetnt_col3' ) ){
 function royal_shop_top_header_conetnt_col3($content,$mobileopen){ ?>
 <?php if($content=='text'){?>
 <div class='content-html'>
-  <?php echo esc_html(get_theme_mod('royal_shop_col3_texthtml',  __( 'Add your content here', 'royal-shop' )));?>
+  <?php echo esc_html(get_theme_mod('royal_shop_col3_texthtml'));?>
 </div>
 <?php }elseif($content=='menu'){
   if ( has_nav_menu('royal-shop-above-menu' ) ){?>
